@@ -23,7 +23,7 @@ app.get('/api/products', ctrl.getProducts);
 app.post('/api/products', ctrl.addProducts);
 
 //put
-//app.put('/api/products/:products_id', ctrl.updateProducts);
+app.put('/api/products/:products_id', ctrl.updateProducts);
 
 //delete
 app.delete('/api/products/:products_id', ctrl.deleteProducts);

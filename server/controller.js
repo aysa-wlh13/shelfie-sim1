@@ -25,7 +25,19 @@ module.exports = {
   },
 
   //put
+  updateProducts: (req, res) => {
+    const db = req.app.get('db')
+    const {products_id} = req.params
+    const { name, price, image_url } = req.body
+   
+    db.update_products([products_id, name, price, image_url])
+        .then(data => res.status(200).send(data))
+        .catch(err => {
+            res.sendStatus(500)
+            console.log(err)
+        })
 
+  },
 
   //delete
   deleteProducts: (req, res) => {
@@ -39,5 +51,5 @@ module.exports = {
             console.log(err)
         })
         
-},
+  }
 };

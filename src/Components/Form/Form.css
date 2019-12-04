@@ -1,0 +1,14 @@
+.green {
+    height: 50vh;
+    width: 22vw;
+    background-color: rgb(58, 216, 134);
+    padding: 10px;
+
+}
+
+.white {
+    height: 14vh;
+    width: 15vw;
+    background-color: white;
+    margin-left: 70px;
+}
