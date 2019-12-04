@@ -1,8 +1,8 @@
 create table products (
-  products_id serial primary key not null,
-  name varchar(25) not null,
-  price integer not null,
-  image_url text not null
+  products_id serial primary key,
+  name varchar(25),
+  price integer,
+  image_url text 
 );
 
 --insert into products
